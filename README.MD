@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { MenuFeatureModule } from 'angular-library-test';
+import { SideMenuModule } from 'angular-library-test';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { MenuFeatureModule } from 'angular-library-test';
     BrowserModule,
 
     // Specify your library as an import
-    MenuFeatureModule
+    SideMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

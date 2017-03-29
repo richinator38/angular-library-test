@@ -15,10 +15,10 @@ export * from './src/menufeature/menu-feature.module';
     MenuFeatureModule
   ]
 })
-export class SampleModule {
+export class SideMenuModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
+      ngModule: MenuFeatureModule,
       providers: []
     };
   }
