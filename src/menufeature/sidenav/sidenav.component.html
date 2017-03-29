@@ -1,0 +1,47 @@
+<div id="mySidenav" class="sidenav " [ngClass]="{mousedown: isMousedown}" (mouseenter)="onMouseenter()"
+     (mouseup)="onMouseup()" (mouseleave)="onMouseleave()">
+    <a href="#" class="center">
+        <div class="navlogo margin-top-30">
+            <img src="Images/star.png">
+        </div>
+    </a>
+    <accordion [closeOthers]="true" [closeAll]="closeAll">
+        <accordion-group #group *ngFor="let item of menuItems" [ngClass]="{visshow: isMousedown}"
+                         (mouseenter)="isMousedown = true;"
+                         [isOpen]="isFirstOpen" (click)="closeAllSubmenuItems = true; onMenuItemClick($event, item); ">
+            <div accordion-heading style="height: 15px;">
+                <img class="float-lt" style="width: 20px;" src="{{item.ImageURL}}">
+                <div class="vishid" [ngClass]="{visshow: isMousedown}" (mouseenter)="isMousedown = true" title="{{item.ToolTip}}">
+                    {{item.Title}}
+                    <i *ngIf="item?.Childern?.length > 0" class="pull-right float-xs-right glyphicon"
+                       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+                </div>
+            </div>
+            <div *ngIf="item?.Childern?.length > 0">
+                <accordion class="submenu-accordion" [closeOthers]="true" [closeAll]="closeAllSubmenuItems">
+                    <accordion-group #group1 *ngFor="let subMenuItem of item?.Childern" (click)="onMenuItemClick($event, subMenuItem)">
+                        <div accordion-heading>
+                            <div title="{{subMenuItem.ToolTip}}">
+                                {{subMenuItem.Title}}
+                                <i *ngIf="subMenuItem?.Childern?.length > 0" class="pull-right float-xs-right glyphicon"
+                                   [ngClass]="{'glyphicon-chevron-down': group1?.isOpen, 'glyphicon-chevron-right': !group1?.isOpen}"></i>
+                            </div>
+                        </div>
+                        <ul *ngIf="subMenuItem?.Childern?.length > 0 " class="style-none">
+                            <li *ngFor="let secondLevelItem of subMenuItem.Childern">
+                                <a style="cursor: pointer;" href="{{secondLevelItem.Link}}" target="{{secondLevelItem.Target}}" title="{{secondLevelItem.ToolTip}}"
+                                   (click)="onMenuItemClick($event, secondLevelItem)">{{secondLevelItem.Title}}</a>
+                            </li>
+                        </ul>
+                    </accordion-group>
+                </accordion>
+            </div>
+        </accordion-group>
+    </accordion>
+    <div class="social-icons">
+        <div class="inner-col">
+            <a href="http://www.facebook.com/Landstar-179662525415705/" class="fb-link" target="External"><img src="images/fb.png"></a>
+            <a href="http://www.linkedin.com/company/landstar" class="linkedin-link" target="External"><img src="images/linkedin.png"></a>
+        </div>
+    </div>
+</div>

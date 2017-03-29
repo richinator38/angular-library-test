@@ -1,0 +1,120 @@
+.sidebar {
+    padding-bottom: 10px;
+}
+
+.sidenav {
+    padding-top: 6px !important;
+    width: 50px;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #101010;
+    transition: .5s;
+    overflow: auto;
+}
+
+.navlogo {
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 6px;
+}
+
+.display {
+    overflow: auto;
+}
+
+.mousedown {
+    width: 200px;
+}
+
+.visshow {
+    visibility: visible !important;
+    display: block !important;
+}
+
+.style-none {
+    list-style-type: none;
+}
+
+.float-lt {
+    float: left;
+}
+
+.vishid {
+    visibility: hidden;
+    display: none;
+    padding: 4px;
+    margin-left: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+}
+
+.inner-col {
+    display: block;
+    width: 25px;
+    margin: auto;
+}
+
+    .inner-col a {
+        float: left;
+    }
+
+        .inner-col a:nth-child(1) img {
+            width: 6px;
+        }
+
+        .inner-col a:nth-child(2) img {
+            width: 10px;
+            margin-left: 8px;
+        }
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #e8b215;
+    display: block;
+    transition: 0.3s;
+}
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus {
+        color: #f1f1f1;
+    }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav.open {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}
+
+@media(max-width: 767px) {
+    .sidenav {
+        overflow-x: visible; /* Disable horizontal scroll */
+    }
+}

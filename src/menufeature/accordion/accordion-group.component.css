@@ -1,0 +1,34 @@
+﻿/* Panel Stuff just for the menu */
+.panel-body {
+    padding: 10px 5px 10px 5px;
+}
+
+.panel-collapse ul {
+    padding-left: 10px;
+}
+
+.panel-default {
+    border-color: transparent;
+}
+
+
+.panel {
+    background-color: #000000;
+}
+
+.panel-title {
+    font-size: 12px;
+}
+
+.panel-default > .panel-heading {
+    color: #fff;
+    background-color: #101010;
+    border-color: transparent;
+}
+
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #333;
+        color: #ffffff;
+    }
+
