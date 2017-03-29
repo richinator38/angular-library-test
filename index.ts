@@ -1,7 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuFeatureModule } from './src/menufeature/menu-feature.module';
-import { SidenavComponent } from './src/menufeature/sidenav/sidenav.component';
 
 export * from './src/menufeature/menu-feature.module';
 
@@ -11,10 +10,9 @@ export * from './src/menufeature/menu-feature.module';
     MenuFeatureModule
   ],
   declarations: [
-    SidenavComponent
   ],
   exports: [
-    SidenavComponent
+    MenuFeatureModule
   ]
 })
 export class SampleModule {
