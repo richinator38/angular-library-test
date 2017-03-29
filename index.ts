@@ -18,7 +18,7 @@ export * from './src/menufeature/menu-feature.module';
 export class SideMenuModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: MenuFeatureModule,
+      ngModule: SideMenuModule,
       providers: []
     };
   }
