@@ -1,5 +1,5 @@
 {
-  "name": "angular-library-test",
+  "name": "angular-library-test-richinator38",
   "version": "0.1.0",
   "scripts": {
     "build": "ngc -p tsconfig.json",
