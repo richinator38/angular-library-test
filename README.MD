@@ -1,11 +1,11 @@
-# angular-library-test
+# angular-library-test-richinator38
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install angular-library-test --save
+$ npm install angular-library-test-richinator38 --save
 ```
 
 ## Consuming your library
@@ -13,7 +13,7 @@ $ npm install angular-library-test --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install angular-library-test
+$ npm install angular-library-test-richinator38
 ```
 
 and then from your Angular `AppModule`:
@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SideMenuModule } from 'angular-library-test';
+import { SideMenuModule } from 'angular-library-test-richinator38';
 
 @NgModule({
   declarations: [
