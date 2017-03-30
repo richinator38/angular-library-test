@@ -14,7 +14,7 @@ import { AccordionComponent } from './accordion.component';
 @Component({
     moduleId: module.id.toString(),
     selector: 'menu-accordion-group',
-    styleUrls: ['./accordion-group.component.css'],
+    styleUrls: ['accordion-group.component.css'],
     template: `
 <div class="panel card" [ngClass]="panelClass">
   <div class="panel-heading card-header" role="tab" (click)="toggleOpen($event)">
