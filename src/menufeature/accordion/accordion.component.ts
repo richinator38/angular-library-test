@@ -3,6 +3,7 @@ import { AccordionPanelComponent } from './accordion-group.component';
 
 /** Displays collapsible content panels for presenting information in a limited amount of space. */
 @Component({
+    moduleId: '678',
     selector: 'menu-accordion',
     template: `<ng-content></ng-content>`,
     // tslint:disable-next-line
