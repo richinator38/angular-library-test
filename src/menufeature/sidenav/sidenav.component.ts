@@ -7,8 +7,8 @@ import { MenuSourceItem } from '../model/menu-source-item';
 @Component({
     moduleId: module.id.toString(),
     selector: 'menu-sidenav',
-    templateUrl: './sidenav.component.html',
-    styleUrls: ['./sidenav.component.css']
+    templateUrl: 'sidenav.component.html',
+    styleUrls: ['sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
     isMousedown: any;
