@@ -12,7 +12,7 @@ import { AccordionComponent } from './accordion.component';
  * */
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.toString(),
     selector: 'menu-accordion-group',
     styleUrls: ['./accordion-group.component.css'],
     template: `

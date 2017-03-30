@@ -5,7 +5,7 @@ import { MenuItem } from '../model/menu-item';
 import { MenuSourceItem } from '../model/menu-source-item';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.toString(),
     selector: 'menu-sidenav',
     templateUrl: './sidenav.component.html',
     styleUrls: ['./sidenav.component.css']
