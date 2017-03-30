@@ -5,8 +5,9 @@ import { MenuItem } from '../model/menu-item';
 import { MenuSourceItem } from '../model/menu-source-item';
 
 @Component({
-  selector: 'menu-sidenav',
-  templateUrl: './sidenav.component.html',
+    moduleId: module.id,
+    selector: 'menu-sidenav',
+    templateUrl: './sidenav.component.html',
     styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
